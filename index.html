@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="shortcut icon" href="./media/boy-dynamic-color.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="/js/index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ["Jost", "sans-serif"],
+        },
+      },
+    };
+  </script>
+  <style>
+
+.jost{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+    /* #main {
+    
+      overflow-y: scroll; /* Add the ability to scroll */
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    #main::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    #main {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    @media screen and (max-width: 1200px) {
+      #desktop-nav {
+        display: none;
+      }
+
+      #burger-nav {
+        display: flex;
+      }
+    }
+
+    #burger-menu {
+      position: relative;
+      display: inline-block;
+    }
+
+    #menu-links {
+      /* position: absolute;
+  top: 100%;
+  right: 0; */
+      background-color: white;
+      width: fit-content;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3 ease-in-out;
+    }
+
+    #menu-links a {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+      color: black;
+      text-decoration: none;
+      transition: all 0.3 ease-in-out;
+    }
+
+    #menu-links li {
+      list-style: none;
+    }
+
+    #menu-links.open {
+      max-height: 300px;
+    }
+  </style>
+</head>
+
+<body id="body" class="font-sans scroll-smooth">
+  <!-- Navbar -->
+
+  <header class="w-screen static md:ml-12 ml-36 pt-8">
+    <nav class="flex items-center max-xl:hidden">
+      <a class="text-2xl w-[10em] font-bold no-underline" href>Kamaleshwaran</a>
+      <ul class="flex font-semibold text-lg ms-auto gap-4 me-4">
+        <li><a href="#Aboutme">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="burger-nav" class="hidden max-xl:flex ms-auto items-center md: sm:w-[100%]">
+      <a class="text-4xl md:text-2xl w-[10em] lg:ms-24 lg:text-4xl sm:text-3xl font-bold no-underline" href>Kamaleshwaran</a>
+      <div id="burger-menu" class="ms-auto lg:me-24 md:me-24">
+        <img src="/media/burger-bar.png" alt="burger-bar" onclick="toggleMenu()" id="burger"
+          class="w-12 ml-[20em] md:ml-[5em] lg:ml-[5em]  relative top-0" />
+
+        <ul id="menu-links" class="font-semibold text-lg -ml-[2em] absolute z-10 gap-4 me-4 transition-all">
+          <li><a onclick="toggleMenu()" href="#Aboutme">About</a></li>
+          <li><a onclick="toggleMenu()" href="#experience">Experience</a></li>
+          <li><a onclick="toggleMenu()" href="#projects">Projects</a></li>
+          <li><a onclick="toggleMenu()" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="ms-auto w-full relative">
+    <section class=" w-screen ml-[15em]  relative pt-[3.5em] md:ml-[1em] mx-auto lg:ml-[] container ">
+      <!-- HomePage -->
+      <hero id="home" class>
+        <div class="justify-center mt-24 flex flex-col items-center">
+          <img src="/media/heroImage.png" alt="profilepic" class="w-[25em] h-[25em] ml-7 lg:ml-0" style="border-radius: 50%" />
+          <aside class="ms-16 flex flex-col">
+            <div class="text-center mt-4 -ml-5 lg:-ml-10 text-4xl font-medium text-gray-500 text-bold">
+              Hello, I' am <br />
+              <span class="text-5xl w-[10em] font-extrabold block mt-3">Kamaleshwaran P.S.</span><span
+                class="text-2xl text-black/60 block font-extrabold mt-3">Full Stack Developer</span>
+            </div>
+            <div class="flex mt-3 justify-center -ms-8 w-full">
+              <button id="downloadResume"
+                class="rounded-full w-[10em] lg:w-[12em] text-lg text-semibold border-gray-800 p-4 font-bold border-2 me-3 ms-10">
+                <a href="/media/My resume.pdf" download="Kamaleshwaran_PS_Resume" class="flex flex-row items-center ">
+                  <img src="/media/download.png" alt="download" class="max-sm:visible me-2 w-8 lg:ms-2" />
+                  <span class="max-sm:hidden md:hidden">Download</span>
+                  <span class="text-3xl font-bold">Resume</span></a></button>
+                  <button
+                class="rounded-full font-bold md:w-[12em] lg:w-[17em] text-sm  text-semibold p-4 bg-gray-800  max-sm:border-4 max-sm:border-gray-600 text-white">
+                <a href="#contact" class="flex flex-row items-center"><img src="/media/telephone.png" alt="contact" class="w-12 md:w-8" /><p
+                    class="max-sm:hidden text-xl lg:text-2xl lg:ms-3">Contact Info</p></a>
+              </button>
+            </div>
+            <div class="flex gap-3 justify-center mt-5 lg:-ml-16">
+              <a><img src="/media/linkedin.png" class="w-12" alt="linkedin" /></a>
+              <a><img src="/media/github.png" class="w-12" alt="linkedin" /></a>
+            </div>
+          </aside>
+        </div>
+      </hero>
+    </section>
+    <!-- About Me -->
+    <section id="Aboutme" class="mt-[10em] ml-36  w-[35em] lg:ml-[14em] md:ml-[6.5em] mx-auto  relative container">
+      <h5 class="text-center text-3xl text-gray-500 font-normal">Get to Know More</h5>
+      <h3 class="text-center text-5xl mt-5">About Me</h3>
+      <div class="flex flex-col gap-4 justify-center mt-10">
+        <div class="border-2 border-gray-500 p-6 text-center w-full rounded-xl">
+          <img src="/media/prize-badge-with-star-and-ribbon.png" class="w-12 mx-auto" alt="ribbon" />
+
+          <h3 class="font-extrabold text-3xl">Experience</h3>
+          <p class="text-xl font-bold text-gray-400">I have 1+ years of work Experience</p>
+        </div>
+        <div class="border-2 border-gray-500 p-6 text-center rounded-xl">
+          <img src="/media/graduated.png" class="w-12 mx-auto" alt="graduated" />
+          <h3 class="font-extrabold text-3xl">Education</h3>
+          <p class="text-xl font-bold text-gray-400">B.E Mechanical Engineering</p>
+        </div>
+      </div>
+      <div class="mt-5 indent-48 leading-8">
+        <p class="text-3xl font-normal text-gray-500">
+          Hi, I'm Kamaleshwaran P.S., a budding web developer with a passion
+          for creating intuitive and dynamic web applications. I graduated
+          with a degree in Bachelor's in Mechanical Engineering from R.M.K
+          Engineering College affiliated to Anna University.
+        </p>
+        <p class="text-3xl font-normal text-gray-500">
+          I have completed Full Stack Development Course in
+          <a href="https://guvi.in" target="_blank"
+            class="text-green-500 font-bold italic underline underline-offset-2">GUVI</a>, an IIT-M incubated Company,
+          where I
+          honed my skills in HTML, CSS,
+          JavaScript, and various web development frameworks.
+        </p>
+        <p class="text-3xl font-normal text-gray-500">
+          I have hands-on experience with HTML, CSS, JavaScript, and have
+          worked with frameworks like React and Node.js. I'm also familiar
+          with version control systems like Git. During my studies, I
+          developed several projects, including a responsive portfolio website
+          and a to-do list application using React. These projects helped me
+          understand the full development cycle from design to deployment.
+        </p>
+        <p class="text-3xl font-normal text-gray-500">
+          In my free time, I enjoy learning about new web technologies,
+          contributing to open-source projects, and staying updated with the
+          latest trends in web development. I'm always eager to expand my
+          skill set and take on new challenges. Feel free to explore my
+          portfolio and reach out if you'd like to collaborate or learn more
+          about my work. I'm excited to connect with other professionals in
+          the field and contribute to innovative projects!
+        </p>
+      </div>
+    </section>
+    <!-- Experience Page -->
+    <section id="experience" class="mt-[10em] w-[35em] ml-36 lg:ml-[13em] md:ml-[7.5em] mb-12 mx-auto relative container">
+      <h5 class="text-center text-3xl font-normal text-gray-500">Explore My</h5>
+      <h3 class="text-center text-5xl mt-5">Experience</h3>
+      <div class="flex flex-col gap-6 gap-x-24 justify-center mt-10">
+        <div class="border-2 p-6 text-center rounded-xl">
+          <h3 class="font-extrabold text-2xl">Front-End Development</h3>
+          <div class="grid grid-cols-3 gap-4 place-items-center mt-4 justify-items-center">
+            <img src="/media/html-5.png" alt="htmlIcon" class="w-16" />
+            <img src="/media/css-3.png" alt="cssIcon" class="w-16" />
+            <img src="/media/atom.png" alt="reactIcon" class="w-16" />
+            <img src="/media/js.png" alt="jsIcon" class="w-16" />
+            <img src="/media/tailwind.png" alt="tailwindIcon" class="w-16" />
+          </div>
+        </div>
+        <div class="border-2 p-6 text-center rounded-xl">
+          <h3 class="font-extrabold text-2xl">Back-End Development</h3>
+          <div class="grid grid-cols-3 gap-4 place-items-center place-content-center h-36">
+            <img src="/media/icons8-express-js-500.png" alt class="w-12" />
+            <img src="/media/mongodb.png" alt class="w-16" />
+            <img src="/media/nodejs.png" alt class="w-16" />
+          </div>
+        </div>
+        <div class="border-2 p-6 text-center rounded-xl">
+          <h3 class="font-extrabold text-2xl">Currently learning</h3>
+          <div class="grid grid-cols-2 gap-4 place-items-center justify-items-center place-content-center h-36">
+            <img src="/media/icons8-aws-48.png" alt="aws" class="w-16" />
+            <figure class="flex flex-col items-center">
+              <img src="/media/front-end-programming.png" alt="webdesign" class="w-16" />
+              <figcaption>System Design</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project's Card -->
+    <section id="projects" class="mt-[10em] ml-36 w-[30em] lg:w-[40em] lg:ml-[13em] md:ml-[12.5em] mx-auto relative container ">
+      <h5 class="text-center text-3xl font-normal text-gray-500">Browse My Recent</h5>
+      <h3 class="text-5xl text-center mt-4">Projects</h3>
+      <div class=" w-[60em] lg:-ml-36 md:w-[40em] h-[40em] lg:h-[30em] lg:w-[57em] lg:overflow-x-auto lg:px-6 md:mt-3 lg:flex-row lg:snap-x snap-mandatory snap-y flex flex-col mx-auto gap-6 overflow-y-auto py-6">
+        <!-- Project 1 -->
+        <div class="border-2 w-[40em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
+          <figure class="mb-4 mx-auto">
+            <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
+            <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
+          </figure>
+          <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
+            <button class="bg-blue-500 w-[7em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+              <a href="https://github.com" target="_blank">Github</a>
+            </button>
+            <button class="bg-green-500 w-[7em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
+              <a href="https://github.com" target="_blank">Live Demo</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="border-2 w-[40em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
+          <figure class="mb-4 mx-auto">
+            <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
+            <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
+          </figure>
+          <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
+            <button class="bg-blue-500 w-[7em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+              <a href="https://github.com" target="_blank">Github</a>
+            </button>
+            <button class="bg-green-500 w-[7em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
+              <a href="https://github.com" target="_blank">Live Demo</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="border-2 w-[40em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
+          <figure class="mb-4 mx-auto">
+            <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
+            <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
+          </figure>
+          <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
+            <button class="bg-blue-500 w-[7em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+              <a href="https://github.com" target="_blank">Github</a>
+            </button>
+            <button class="bg-green-500 w-[7em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
+              <a href="https://github.com" target="_blank">Live Demo</a>
+            </button>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <!-- ContactPage -->
+    <section id="contact"
+      class="mt-[10em] mb-[12.5em] lg:ml-[15em] md:ml-[7.5em] my-auto relative ml-36 w-[35em] container">
+      <h5 class="text-gray-500 text-4xl text-center">Get in touch</h5>
+      <h3 class="text-7xl text-center mt-4">Contact Me</h3>
+
+      <div class="flex gap-4 border-2 w-[30rem] p-6 justify-center items-center mx-auto mt-4 mb-8 border-gray-700"
+        style="border-radius: 30px">
+        <p class="flex flex-row items-center">
+          <img src="/media/email.png" alt="email" class="w-12" />
+          <a href="mailto:pskamaleshwaran@gmail.com"
+            class="text-4xl ms-3 hover:text-gray-500 hover:underline-offset-4 hover:underline">Mail</a>
+        </p>
+
+        <p class="flex flex-row items-center">
+          <img src="/media/linkedin.png" alt="linkedin" class="w-12" /><a href="https://www.linkedin.com"
+            class="text-4xl text-[#007ab9] ms-3 hover:text-gray-500 hover:underline-offset-4 hover:underline">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="w-[35em] ml-48 lg:ml-[17.5em] md:ml-[10em] mb-6 container">
+    <ul class="flex font-semibold items-center text-3xl gap-4 h-12">
+      <li><a href="#Aboutme">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="text-xl md:ms-3 text-gray-500">Copyright © 2024 Kamaleshwaran. All Rights Reserved.</div>
+  </footer>
+</body>
+
+</html>
