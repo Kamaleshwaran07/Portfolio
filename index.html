@@ -95,7 +95,7 @@
 <body id="body" class="font-sans scroll-smooth">
   <!-- Navbar -->
 
-  <header class="w-screen static md:ml-12 ml-36 pt-8">
+  <header class="static md:ml-12 ml-36 pt-8">
     <nav class="flex items-center max-xl:hidden">
       <a class="text-2xl w-[10em] font-bold no-underline" href>Kamaleshwaran</a>
       <ul class="flex font-semibold text-lg ms-auto gap-4 me-4">
@@ -106,10 +106,10 @@
       </ul>
     </nav>
     <nav id="burger-nav" class="hidden max-xl:flex ms-auto items-center md: sm:w-[100%]">
-      <a class="text-4xl md:text-2xl w-[10em] lg:ms-24 lg:text-4xl sm:text-3xl font-bold no-underline" href>Kamaleshwaran</a>
-      <div id="burger-menu" class="ms-auto lg:me-24 md:me-24">
+      <a class="text-4xl md:text-2xl w-[10em] lg:ms-24 md:ms-24 lg:text-4xl sm:text-3xl font-bold no-underline" href>Kamaleshwaran</a>
+      <div id="burger-menu" class="ms-auto lg:me-16 md:me-12">
         <img src="/media/burger-bar.png" alt="burger-bar" onclick="toggleMenu()" id="burger"
-          class="w-12 ml-[20em] md:ml-[5em] lg:ml-[5em]  relative top-0" />
+          class="w-12 ml-[20em] md:ml-[12em] lg:ml-[5em]  relative top-0" />
 
         <ul id="menu-links" class="font-semibold text-lg -ml-[2em] absolute z-10 gap-4 me-4 transition-all">
           <li><a onclick="toggleMenu()" href="#Aboutme">About</a></li>
@@ -121,10 +121,10 @@
     </nav>
   </header>
   <main id="main" class="ms-auto w-full relative">
-    <section class=" w-screen ml-[15em]  relative pt-[3.5em] md:ml-[1em] mx-auto lg:ml-[] container ">
+    <section class="ml-[15em] xl:ml-24  relative pt-[3.5em] md:ml-[1em] mx-auto container ">
       <!-- HomePage -->
       <hero id="home" class>
-        <div class="justify-center mt-24 flex flex-col items-center">
+        <div class="justify-center mt-24 flex flex-col xl:flex-row items-center">
           <img src="/media/heroImage.png" alt="profilepic" class="w-[25em] h-[25em] ml-7 lg:ml-0" style="border-radius: 50%" />
           <aside class="ms-16 flex flex-col">
             <div class="text-center mt-4 -ml-5 lg:-ml-10 text-4xl font-medium text-gray-500 text-bold">
@@ -154,11 +154,11 @@
       </hero>
     </section>
     <!-- About Me -->
-    <section id="Aboutme" class="mt-[10em] ml-36  w-[35em] lg:ml-[14em] md:ml-[6.5em] mx-auto  relative container">
+    <section id="Aboutme" class="mt-[10em] ml-48 xl:w-full w-[35em] xl:ml-24 lg:ml-[14em] md:ml-[8em] mx-auto  relative container">
       <h5 class="text-center text-3xl text-gray-500 font-normal">Get to Know More</h5>
       <h3 class="text-center text-5xl mt-5">About Me</h3>
-      <div class="flex flex-col gap-4 justify-center mt-10">
-        <div class="border-2 border-gray-500 p-6 text-center w-full rounded-xl">
+      <div class="flex flex-col xl:flex-row gap-4 justify-center mt-10">
+        <div class="border-2 border-gray-500 p-6 text-center  rounded-xl">
           <img src="/media/prize-badge-with-star-and-ribbon.png" class="w-12 mx-auto" alt="ribbon" />
 
           <h3 class="font-extrabold text-3xl">Experience</h3>
@@ -171,13 +171,13 @@
         </div>
       </div>
       <div class="mt-5 indent-48 leading-8">
-        <p class="text-3xl font-normal text-gray-500">
+        <p class="text-4xl font-normal text-gray-500">
           Hi, I'm Kamaleshwaran P.S., a budding web developer with a passion
           for creating intuitive and dynamic web applications. I graduated
           with a degree in Bachelor's in Mechanical Engineering from R.M.K
           Engineering College affiliated to Anna University.
         </p>
-        <p class="text-3xl font-normal text-gray-500">
+        <p class="text-4xl font-normal text-gray-500">
           I have completed Full Stack Development Course in
           <a href="https://guvi.in" target="_blank"
             class="text-green-500 font-bold italic underline underline-offset-2">GUVI</a>, an IIT-M incubated Company,
@@ -185,7 +185,7 @@
           honed my skills in HTML, CSS,
           JavaScript, and various web development frameworks.
         </p>
-        <p class="text-3xl font-normal text-gray-500">
+        <p class="text-4xl font-normal text-gray-500">
           I have hands-on experience with HTML, CSS, JavaScript, and have
           worked with frameworks like React and Node.js. I'm also familiar
           with version control systems like Git. During my studies, I
@@ -193,7 +193,7 @@
           and a to-do list application using React. These projects helped me
           understand the full development cycle from design to deployment.
         </p>
-        <p class="text-3xl font-normal text-gray-500">
+        <p class="text-4xl font-normal text-gray-500">
           In my free time, I enjoy learning about new web technologies,
           contributing to open-source projects, and staying updated with the
           latest trends in web development. I'm always eager to expand my
@@ -205,11 +205,11 @@
       </div>
     </section>
     <!-- Experience Page -->
-    <section id="experience" class="mt-[10em] w-[35em] ml-36 lg:ml-[13em] md:ml-[7.5em] mb-12 mx-auto relative container">
+    <section id="experience" class="mt-[10em] w-[35em] ml-36 xl:w-full xl:ml-24 lg:ml-[13em] md:ml-[7.5em] mb-12 mx-auto relative container">
       <h5 class="text-center text-3xl font-normal text-gray-500">Explore My</h5>
       <h3 class="text-center text-5xl mt-5">Experience</h3>
-      <div class="flex flex-col gap-6 gap-x-24 justify-center mt-10">
-        <div class="border-2 p-6 text-center rounded-xl">
+      <div class="flex flex-col xl:flex-row gap-6 gap-x-24 justify-center mt-10">
+        <div class="border-2 border-gray-500 p-6 text-center rounded-xl">
           <h3 class="font-extrabold text-2xl">Front-End Development</h3>
           <div class="grid grid-cols-3 gap-4 place-items-center mt-4 justify-items-center">
             <img src="/media/html-5.png" alt="htmlIcon" class="w-16" />
@@ -219,15 +219,15 @@
             <img src="/media/tailwind.png" alt="tailwindIcon" class="w-16" />
           </div>
         </div>
-        <div class="border-2 p-6 text-center rounded-xl">
+        <div class="border-2 border-gray-500 p-6 text-center rounded-xl">
           <h3 class="font-extrabold text-2xl">Back-End Development</h3>
           <div class="grid grid-cols-3 gap-4 place-items-center place-content-center h-36">
-            <img src="/media/icons8-express-js-500.png" alt class="w-12" />
-            <img src="/media/mongodb.png" alt class="w-16" />
-            <img src="/media/nodejs.png" alt class="w-16" />
-          </div>
+            <img src="/media/icons8-express-js-500.png" alt="expressJs" class="w-16" />
+            <img src="/media/mongodb.png" alt="mongodb" class="w-24" />
+            <img src="/media/nodejs.png" alt="nodeJs" class="w-24" />
+          </div>`
         </div>
-        <div class="border-2 p-6 text-center rounded-xl">
+        <div class="border-2 border-gray-500 p-6 text-center rounded-xl">
           <h3 class="font-extrabold text-2xl">Currently learning</h3>
           <div class="grid grid-cols-2 gap-4 place-items-center justify-items-center place-content-center h-36">
             <img src="/media/icons8-aws-48.png" alt="aws" class="w-16" />
@@ -240,53 +240,53 @@
       </div>
     </section>
     <!-- Project's Card -->
-    <section id="projects" class="mt-[10em] ml-36 w-[30em] lg:w-[40em] lg:ml-[13em] md:ml-[12.5em] mx-auto relative container ">
+    <section id="projects" class="mt-[10em] ml-48 w-[30em] xl:ml-24 xl:w-full lg:w-[40em] lg:ml-[13em] md:ml-[12.5em] mx-auto relative container ">
       <h5 class="text-center text-3xl font-normal text-gray-500">Browse My Recent</h5>
-      <h3 class="text-5xl text-center mt-4">Projects</h3>
-      <div class=" w-[60em] lg:-ml-36 md:w-[40em] h-[40em] lg:h-[30em] lg:w-[57em] lg:overflow-x-auto lg:px-6 md:mt-3 lg:flex-row lg:snap-x snap-mandatory snap-y flex flex-col mx-auto gap-6 overflow-y-auto py-6">
+      <h3 class="text-5xl text-center mt-4 mb-3">Projects</h3>
+      <div class=" w-[50em] lg:-ml-36 md:w-[40em] xl:h-[33em] h-[40em] xl:w-full xl:ml-6 xl:overflow-x-auto lg:h-[30em] lg:w-[57em] lg:overflow-x-auto lg:px-6 -ml-12 md:mt-3 lg:flex-row lg:snap-x snap-mandatory snap-y flex flex-col mx-auto gap-6 overflow-y-auto py-6">
         <!-- Project 1 -->
-        <div class="border-2 w-[40em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
+        <div class="border-2 border-gray-400 w-[35em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
           <figure class="mb-4 mx-auto">
             <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
             <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
           </figure>
           <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
-            <button class="bg-blue-500 w-[7em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            <button class="bg-blue-500 w-[6em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
               <a href="https://github.com" target="_blank">Github</a>
             </button>
-            <button class="bg-green-500 w-[7em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
+            <button class="bg-green-500 w-[6em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
               <a href="https://github.com" target="_blank">Live Demo</a>
             </button>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="border-2 w-[40em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
+        <div class="border-2 border-gray-400 w-[35em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
           <figure class="mb-4 mx-auto">
             <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
             <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
           </figure>
           <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
-            <button class="bg-blue-500 w-[7em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            <button class="bg-blue-500 w-[6em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
               <a href="https://github.com" target="_blank">Github</a>
             </button>
-            <button class="bg-green-500 w-[7em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
+            <button class="bg-green-500 w-[6em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
               <a href="https://github.com" target="_blank">Live Demo</a>
             </button>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="border-2 w-[40em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
+        <div class="border-2 border-gray-400 w-[35em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
           <figure class="mb-4 mx-auto">
             <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
             <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
           </figure>
           <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
-            <button class="bg-blue-500 w-[7em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            <button class="bg-blue-500 w-[6em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
               <a href="https://github.com" target="_blank">Github</a>
             </button>
-            <button class="bg-green-500 w-[7em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
+            <button class="bg-green-500 w-[6em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
               <a href="https://github.com" target="_blank">Live Demo</a>
             </button>
           </div>
@@ -296,7 +296,7 @@
     </section>
     <!-- ContactPage -->
     <section id="contact"
-      class="mt-[10em] mb-[12.5em] lg:ml-[15em] md:ml-[7.5em] my-auto relative ml-36 w-[35em] container">
+      class="mt-[10em] mb-[12.5em] lg:ml-[15em] xl:w-full xl:ml-24 md:ml-[7.5em] my-auto relative ml-36 w-[35em] container">
       <h5 class="text-gray-500 text-4xl text-center">Get in touch</h5>
       <h3 class="text-7xl text-center mt-4">Contact Me</h3>
 
@@ -315,14 +315,14 @@
       </div>
     </section>
   </main>
-  <footer class="w-[35em] ml-48 lg:ml-[17.5em] md:ml-[10em] mb-6 container">
-    <ul class="flex font-semibold items-center text-3xl gap-4 h-12">
+  <footer class="w-[35em] ml-48 xl:w-full xl:mx-auto lg:ml-[17.5em] relative md:ml-[10em] mb-6 container">
+    <ul class="flex font-semibold items-center xl:justify-center text-3xl gap-4 h-12">
       <li><a href="#Aboutme">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="text-xl md:ms-3 text-gray-500">Copyright © 2024 Kamaleshwaran. All Rights Reserved.</div>
+    <div class="text-xl md:ms-3 text-gray-500 xl:ml-[25rem]">Copyright © 2024 Kamaleshwaran. All Rights Reserved.</div>
   </footer>
 </body>
 
