@@ -125,7 +125,10 @@
       <!-- HomePage -->
       <hero id="home" class>
         <div class="justify-center mt-24 flex flex-col xl:flex-row items-center">
-          <img src="/media/heroImage.png" alt="profilepic" class="w-[25em] h-[25em] ml-7 lg:ml-0" style="border-radius: 50%" />
+          <div class="w-[25em] h-[25em] ml-7 lg:ml-0 overflow-hidden" style="border-radius: 50%">
+
+            <img src="/media/kamalesh.jpg" alt="profilepic" class="w-full h-full  scale-125 overflow-hidden"  />
+          </div>
           <aside class="ms-16 flex flex-col">
             <div class="text-center mt-4 -ml-5 lg:-ml-10 text-4xl font-medium text-gray-500 text-bold">
               Hello, I' am <br />
@@ -146,8 +149,8 @@
               </button>
             </div>
             <div class="flex gap-3 justify-center mt-5 lg:-ml-16">
-              <a><img src="/media/linkedin.png" class="w-12" alt="linkedin" /></a>
-              <a><img src="/media/github.png" class="w-12" alt="linkedin" /></a>
+              <a href="https://www.linkedin.com/in/kamaleshwaran-p-s-255a95179/"><img src="/media/linkedin.png" class="w-12" alt="linkedin" /></a>
+              <a class="" href="https://github.com/Kamaleshwaran07" ><img src="/media/github.png" class="w-12" alt="github" /></a>
             </div>
           </aside>
         </div>
@@ -205,7 +208,7 @@
       </div>
     </section>
     <!-- Experience Page -->
-    <section id="experience" class="mt-[10em] w-[35em] ml-36 xl:w-full xl:ml-24 lg:ml-[13em] md:ml-[7.5em] mb-12 mx-auto relative container">
+    <section id="experience" class="mt-[10em]  ml-36 xl:container xl:mx-auto lg:ml-[13em] md:ml-[7.5em] mb-12 relative">
       <h5 class="text-center text-3xl font-normal text-gray-500">Explore My</h5>
       <h3 class="text-center text-5xl mt-5">Experience</h3>
       <div class="flex flex-col xl:flex-row gap-6 gap-x-24 justify-center mt-10">
@@ -247,15 +250,20 @@
         <!-- Project 1 -->
         <div class="border-2 border-gray-400 w-[35em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
           <figure class="mb-4 mx-auto">
-            <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
-            <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
+            <img src="/media/project1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[25em] rounded-lg" />
+            <figcaption class="text-center text-4xl font-bold mt-12">Task Submission Mockup</figcaption>
           </figure>
           <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
-            <button class="bg-blue-500 w-[6em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
-              <a href="https://github.com" target="_blank">Github</a>
+            <button class="bg-blue-950 flex flex-row w-[4em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            
+              <a href="https://github.com/Kamaleshwaran07/TASK-SUBMISSION-BACKEND.git" target="_blank" class="flex items-end text-2xl gap-2 md:text-xl" >   <img src="/media/github.png" class="w-8 bg-white rounded-2xl border-2 border-white" alt="github" /> Backend</a>
             </button>
-            <button class="bg-green-500 w-[6em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
-              <a href="https://github.com" target="_blank">Live Demo</a>
+            <button class="bg-blue-950 flex flex-row w-[4em] lg:w-[7em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            
+              <a href="https://github.com/Kamaleshwaran07/TASK-SUBMISSION-FRONTEND.git" target="_blank" class="flex items-end md:text-xl text-2xl gap-2" >   <img src="/media/github.png" class="w-8 bg-white rounded-2xl border-2 border-white" alt="github" /> Frontend</a>
+            </button>
+            <button class="bg-green-500 w-[4em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 px-3 font-normal rounded-xl lg:px-1  text-white py-2 hover:bg-green-700">
+              <a href="https://tasksubmission.netlify.app/" target="_blank" class="flex items-end gap-2" >Site <img src="/media/enter.png" alt="enter" class="w-10 md:w-8 bg-white" /></a>
             </button>
           </div>
         </div>
@@ -263,31 +271,43 @@
         <!-- Project 2 -->
         <div class="border-2 border-gray-400 w-[35em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
           <figure class="mb-4 mx-auto">
-            <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
-            <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
+            <img src="/media/project2.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[25em] rounded-lg" />
+            <figcaption class="text-center text-4xl font-bold mt-12">Task Submission Mockup</figcaption>
           </figure>
           <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
-            <button class="bg-blue-500 w-[6em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
-              <a href="https://github.com" target="_blank">Github</a>
+            <button class="bg-blue-950 flex flex-row w-[4em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            
+              <a href="https://github.com/Kamaleshwaran07/todoList_Back-end.git" target="_blank" class="flex items-end text-2xl gap-2 md:text-xl" >   <img src="/media/github.png" class="w-8 bg-white rounded-2xl border-2 border-white" alt="github" /> Backend</a>
             </button>
-            <button class="bg-green-500 w-[6em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
-              <a href="https://github.com" target="_blank">Live Demo</a>
+            <button class="bg-blue-950 flex flex-row w-[4em] lg:w-[7em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            
+              <a href="https://github.com/Kamaleshwaran07/Front-end.git" target="_blank" class="flex items-end md:text-xl text-2xl gap-2" >   <img src="/media/github.png" class="w-8 bg-white rounded-2xl border-2 border-white" alt="github" /> Frontend</a>
+            </button>
+            <button class="bg-green-500 w-[4em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 px-3 font-normal rounded-xl lg:px-1  text-white py-2 hover:bg-green-700">
+              <a href="https://todolist07.netlify.app/" target="_blank" class="flex items-end gap-2" >Site <img src="/media/enter.png" alt="enter" class="w-10 md:w-8 bg-white" /></a>
             </button>
           </div>
         </div>
-
+        
+        
+        
         <!-- Project 3 -->
         <div class="border-2 border-gray-400 w-[35em] md:w-[25em] lg:w-[45em] snap-start rounded-lg p-4 flex flex-col">
           <figure class="mb-4 mx-auto">
-            <img src="/media/woman1.png" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[20em] rounded-lg" />
-            <figcaption class="text-center text-4xl font-bold mt-2">Project 1</figcaption>
+            <img src="/media/project3.jpg" alt="Project 1 screenshot" class="w-[30em] md:w-[20em] lg:w-[25em] rounded-lg" />
+            <figcaption class="text-center text-4xl font-bold mt-12">Task Submission Mockup</figcaption>
           </figure>
           <div class="flex justify-center md:flex-col lg:flex-row mx-auto gap-2">
-            <button class="bg-blue-500 w-[6em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
-              <a href="https://github.com" target="_blank">Github</a>
+            <button class="bg-blue-950 flex flex-row w-[4em] lg:w-[6em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            
+              <a href="https://github.com/Kamaleshwaran07/E-commerce-Backend.git" target="_blank" class="flex items-end text-2xl gap-2 md:text-xl" >   <img src="/media/github.png" class="w-8 bg-white rounded-2xl border-2 border-white" alt="github" /> Backend</a>
             </button>
-            <button class="bg-green-500 w-[6em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 font-normal rounded-xl lg:px-1  text-white py-2 px-2 hover:bg-green-700">
-              <a href="https://github.com" target="_blank">Live Demo</a>
+            <button class="bg-blue-950 flex flex-row w-[4em] lg:w-[7em] lg:text-xl border-2 border-blue-500 text-4xl text-white py-2 rounded-xl lg:px-1 font-normal px-2 hover:bg-blue-400">
+            
+              <a href="https://github.com/Kamaleshwaran07/E-commerce-Frontend.git" target="_blank" class="flex items-end md:text-xl text-2xl gap-2" >   <img src="/media/github.png" class="w-8 bg-white rounded-2xl border-2 border-white" alt="github" /> Frontend</a>
+            </button>
+            <button class="bg-green-500 w-[4em] lg:w-[6em] lg:text-xl text-4xl border-2 border-green-500 px-3 font-normal rounded-xl lg:px-1  text-white py-2 hover:bg-green-700">
+              <a href="https://ezcartshoppers.netlify.app/" target="_blank" class="flex items-end gap-2" >Site <img src="/media/enter.png" alt="enter" class="w-10 md:w-8 bg-white" /></a>
             </button>
           </div>
         </div>
@@ -296,7 +316,7 @@
     </section>
     <!-- ContactPage -->
     <section id="contact"
-      class="mt-[10em] mb-[12.5em] lg:ml-[15em] xl:w-full xl:ml-24 md:ml-[7.5em] my-auto relative ml-36 w-[35em] container">
+      class="mt-[10em] mb-[12.5em] lg:ml-[15em] xl:container xl:mx-auto md:ml-[7.5em] my-auto relative ml-36 w-[35em] container">
       <h5 class="text-gray-500 text-4xl text-center">Get in touch</h5>
       <h3 class="text-7xl text-center mt-4">Contact Me</h3>
 
@@ -309,13 +329,13 @@
         </p>
 
         <p class="flex flex-row items-center">
-          <img src="/media/linkedin.png" alt="linkedin" class="w-12" /><a href="https://www.linkedin.com"
+          <img src="/media/linkedin.png" alt="linkedin" class="w-12" /><a  href="https://www.linkedin.com/in/kamaleshwaran-p-s-255a95179/"
             class="text-4xl text-[#007ab9] ms-3 hover:text-gray-500 hover:underline-offset-4 hover:underline">LinkedIn</a>
         </p>
       </div>
     </section>
   </main>
-  <footer class="w-[35em] ml-48 xl:w-full xl:mx-auto lg:ml-[17.5em] relative md:ml-[10em] mb-6 container">
+  <footer class="w-[35em] ml-48 xl:container xl:mx-auto lg:ml-[17.5em] relative md:ml-[10em] mb-6 container">
     <ul class="flex font-semibold items-center xl:justify-center text-3xl gap-4 h-12">
       <li><a href="#main">Home</a></li>
       <li><a href="#Aboutme">About</a></li>
@@ -323,7 +343,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="text-xl md:ms-3 text-gray-500 xl:ml-[25rem]">Copyright © 2024 Kamaleshwaran. All Rights Reserved.</div>
+    <div class="text-xl md:ms-3 text-gray-500 text-center ">Copyright © 2024 Kamaleshwaran. All Rights Reserved.</div>
   </footer>
 </body>
 
